@@ -11,7 +11,7 @@ function ListExample() {
   return (
     <>
       <h2>Work with list and arrays</h2>
-      <div class="flex-container">
+      <div className="flex-container">
         <div>
           <ul>
             {fruits.map((fruit, key) => (
@@ -22,7 +22,7 @@ function ListExample() {
 
         <div>
           <table>
-            <thead></thead>
+            <thead />
             <tbody>
               {matrix.map((row, rowInd) => (
                 <tr key={rowInd}>
@@ -34,6 +34,7 @@ function ListExample() {
                 </tr>
               ))}
             </tbody>
+            <tfoot />
           </table>
         </div>
       </div>

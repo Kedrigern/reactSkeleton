@@ -7,13 +7,15 @@ function StateExample() {
     <>
       <h2>Component states</h2>
       <table>
-        <tr>
-          <td>Number of clicks:</td>
-          <td>{count}</td>
-          <td>
-            <button onClick={() => setCount(count + 1)}>Click!</button>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Number of clicks:</td>
+            <td>{count}</td>
+            <td>
+              <button onClick={() => setCount(count + 1)}>Click!</button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </>
   );
