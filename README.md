@@ -2,7 +2,7 @@
 
 A simple skeleton for a React.js app that is not as complex as [Create React App](https://github.com/facebook/create-react-app) from Meta. With example of [Chakra UI](https://v2.chakra-ui.com/).
 
-If you want version without Chakra UI is under v1 tag.
+If you want version without Chakra UI is under v1 tag: `git checkout v1.1`, back: `git checkout main`
 
 ## Usage
 
@@ -15,3 +15,10 @@ npm install react react-dom webpack webpack-cli webpack-dev-server babel-loader 
 Run the development server: `npm start`
 
 The app should now be running at:`http://localhost:3000`
+
+## Content
+
+- Basic HelloWorld components with params
+- Manipulating with lists and multi dimensional arrays
+- Usasge of component states
+- Chakra UI
