@@ -1,18 +1,19 @@
 import React from "react";
-import HelloWorld from "./components/HelloWorld";
-import ListExample from "./components/ListExample";
-import StateExample from "./components/StateExample";
+
+import { ChakraProvider } from "@chakra-ui/react";
+
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div>
-      <h1>React skeleton</h1>
-      <HelloWorld greatings="Ahoj" who="světe širý" />
-      <ListExample />
-      <StateExample />
+    <ChakraProvider>
+      <Navbar />
+      <Main />
+
       <hr />
       <p>Keddie</p>
-    </div>
+    </ChakraProvider>
   );
 }
 

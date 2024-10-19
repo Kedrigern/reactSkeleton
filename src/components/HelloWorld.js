@@ -1,13 +1,14 @@
 import React from "react";
+import { Box, Heading } from "@chakra-ui/react";
 
 function HelloWorld({ greatings, who }) {
   return (
-    <>
-      <h2>Hello world!</h2>
-      <p>
+    <Box>
+      <Heading as="h2">Hello world!</Heading>
+      <Heading as="h4" size="sm">
         {greatings}, {who}!
-      </p>
-    </>
+      </Heading>
+    </Box>
   );
 }
 

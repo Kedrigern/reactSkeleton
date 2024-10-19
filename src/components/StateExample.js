@@ -1,22 +1,19 @@
 import React, { useState } from "react";
-
+import { Heading, Button, Text } from "@chakra-ui/react";
+import { QuestionIcon, WarningTwoIcon } from "@chakra-ui/icons";
 function StateExample() {
+  // My custom states
   const [count, setCount] = useState(0);
+  const [icon, setIcon] = useState(true);
 
   return (
     <>
-      <h2>Component states</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>Number of clicks:</td>
-            <td>{count}</td>
-            <td>
-              <button onClick={() => setCount(count + 1)}>Click!</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <Heading as="h2">States</Heading>
+      <Button onClick={() => setIcon(!icon)}>
+        {icon ? <QuestionIcon /> : <WarningTwoIcon />}
+      </Button>
+      <Button onClick={() => setCount(count + 1)}>Click me!</Button>
+      <Text>Number of clicks: {count}</Text>
     </>
   );
 }
